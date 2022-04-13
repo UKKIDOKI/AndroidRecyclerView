@@ -1,3 +1,4 @@
+/*
 package com.doit.androidrecyclerview;
 
 import android.content.Context;
@@ -19,8 +20,14 @@ public class PersonAdapter extends RecyclerView.Adapter<PersonAdapter.ViewHolder
     // 갖고 온 데이터를 담아줄 items arraylist를 생성
    ArrayList<Person1> items = new ArrayList<Person1>();  // Person1클래스의 데이터를 ArrayList에 담기
 
+    public PersonAdapter(ArrayList<Person1> items) {
+        this.items = items;
+    }
 
-    // 뷰홀더 객체가 만들어질때 자동호출 각 아이템을 위해 정의된 xml레이아웃을 이용해 뷰 객체를 만들어줌 그리고 뷰객체를 새로만든 뷰홀더 객체에 담아 반환
+    public PersonAdapter() {
+
+    }
+// 뷰홀더 객체가 만들어질때 자동호출 각 아이템을 위해 정의된 xml레이아웃을 이용해 뷰 객체를 만들어줌 그리고 뷰객체를 새로만든 뷰홀더 객체에 담아 반환
     // 뷰타입을 위한 정수값이 파라미터로 전달됨
 
     // 뷰홀더를 사용할때 필요한 필수메서드 생성
@@ -28,9 +35,12 @@ public class PersonAdapter extends RecyclerView.Adapter<PersonAdapter.ViewHolder
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) { // 뷰홀더를 생성
-        LayoutInflater inflater = LayoutInflater.from(parent.getContext()); //레이아웃을 객체화할수있게 인플레이터 객체를 선언후 컨텍스트를 호출
-        View itemView = inflater.inflate(R.layout.person_item, parent, false); //xml파일을 객체로만들수있게해줌
-        return new ViewHolder(itemView);  // 새로운 뷰홀더 객체를 생성과 동시에 파라미터로 아이템뷰를 넘겨줌
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.person_item,parent,false);
+
+        return new ViewHolder(view);  // 새로운 뷰홀더 객체를 생성과 동시에 파라미터로 아이템뷰를 넘겨줌
+
+        //LayoutInflater inflater = LayoutInflater.from(parent.getContext()); //레이아웃을 객체화할수있게 인플레이터 객체를 선언후 컨텍스트를 호출
+        // View itemView = inflater.inflate(R.layout.person_item, parent, false); //xml파일을 객체로만들수있게해줌
     }
 
 
@@ -81,3 +91,4 @@ public class PersonAdapter extends RecyclerView.Adapter<PersonAdapter.ViewHolder
     }
 
 }
+*/

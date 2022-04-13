@@ -11,7 +11,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidRecyclerView">
         <activity
-            android:name=".TestActivity"
+            android:name=".NewActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

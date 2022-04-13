@@ -1,3 +1,4 @@
+/*
 package com.doit.androidrecyclerview;
 
 import android.net.Uri;
@@ -6,6 +7,7 @@ import android.util.Log;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import java.util.Date;
 import java.util.List;
 
 import retrofit2.Call;
@@ -15,7 +17,7 @@ import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 public class TestActivity extends AppCompatActivity {
-    final String I = "https://senior.bucheon.go.kr";
+    final String URL = "https://senior.bucheon.go.kr";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,25 +25,24 @@ public class TestActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         Retrofit retrofit = new Retrofit.Builder()
-                //.baseUrl("https://senior.bucheon.go.kr")
-                .baseUrl(I)
+                .baseUrl(URL)
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
 
         //Data data = retrofit.create(Data.class);
         ApiService apiService = retrofit.create(ApiService.class);
-        Call<List<Data>> call = apiService.getData();
-        call.enqueue(new Callback<List<Data>>() {
+        Call<List<NewData>> call = apiService.getData();
+        call.enqueue(new Callback<List<NewData>>() {
             @Override
-            public void onResponse(Call<List<Data>> call, Response<List<Data>> response) {
-
+            public void onResponse(Call<List<NewData>> call, Response<List<NewData>> response) {
+                Log.e("logError", String.valueOf(response));
             }
 
             @Override
-            public void onFailure(Call<List<Data>> call, Throwable t) {
+            public void onFailure(Call<List<NewData>> call, Throwable t) {
 
             }
         });
 
     }
-}
+}*/

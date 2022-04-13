@@ -1,3 +1,4 @@
+/*
 package com.doit.androidrecyclerview;
 // 데이터클래스 DTO
 public class Person1 {
@@ -27,3 +28,4 @@ String mobile;
         this.mobile = mobile;
     }
 }
+*/

@@ -1,3 +1,4 @@
+/*
 package com.doit.androidrecyclerview;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -34,22 +35,11 @@ public class MainActivity extends AppCompatActivity {
 
 
         //새로운 객체생성후 안에 아이템추가후 어댑터에 추가
-        adapter.addItem(new Person1("ㄱ","0101111"));
-        adapter.addItem(new Person1("ㄴ","010"));
-        adapter.addItem(new Person1("ㄷ","010"));
-        adapter.addItem(new Person1("ㄹ","010"));
-        adapter.addItem(new Person1("ㅁ","010"));
-        adapter.addItem(new Person1("ㅂ","010"));
-        adapter.addItem(new Person1("ㅅ","010"));
-        adapter.addItem(new Person1("ㅇ","010"));
-        adapter.addItem(new Person1("ㅈ","010"));
-        adapter.addItem(new Person1("ㅊ","010"));
-        adapter.addItem(new Person1("ㄱ","010"));
-        adapter.addItem(new Person1("ㄴ","010"));
-        adapter.addItem(new Person1("ㄷ","010"));
-        adapter.addItem(new Person1("ㄹ","010"));
-        adapter.addItem(new Person1("ㅁ","010"));
-        adapter.addItem(new Person1("ㅂ","010"));
+
+*/
+/*
+        adapter.addItem(new Person1("ㅂ",*//*
+"010"));
         adapter.addItem(new Person1("ㅅ","010"));
 
 
@@ -58,3 +48,4 @@ public class MainActivity extends AppCompatActivity {
 
     }
 }
+*/
